@@ -14,8 +14,7 @@ https://docs.docker.com/get-docker/
 Then you have to install all dependencies:
 
 ```shell
-docker exec -it receipt-engine_php /bin/bash
-composer install
+docker-compose up -d
 ```
 
 That's all
