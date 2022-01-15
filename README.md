@@ -37,6 +37,10 @@ DB_PORT=5432
 docker-compose up -d
 ```
 
+## Swagger docs
+
+Documentation of endpoints can be found at ```http://localhost:8000/api/docs```
+
 ### Get keycloak token
 
 ```shell
