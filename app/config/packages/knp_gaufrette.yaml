@@ -1,0 +1,10 @@
+knp_gaufrette:
+  adapters:
+    receipt_engine:
+      local:
+        directory: /app/public/tmp/files
+        create: true
+  filesystems:
+    receipt_filesystem:
+      adapter: receipt_engine
+      alias: receipt_engine_filesystem
