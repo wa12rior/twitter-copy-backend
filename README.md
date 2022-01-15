@@ -14,8 +14,7 @@ https://docs.docker.com/get-docker/
 Then you have to install all dependencies:
 
 ```shell
-docker exec -it receipt-engine_php /bin/bash
-composer install
+docker-compose up -d
 ```
 
 That's all
@@ -25,10 +24,11 @@ That's all
 ```dotenv
 APP_ENV=dev
 DB_HOST=database
-DB_NAME=receipt-engine
+DB_NAME=twitter-copy
 DB_PASSWORD=password
 DB_USER=user
 DB_PORT=5432
+# keycloak in_progress
 ```
 
 ## Run containers
