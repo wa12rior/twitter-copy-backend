@@ -37,6 +37,12 @@ DB_PORT=5432
 docker-compose up -d
 ```
 
+## Base url is
+
+```
+https://localhost:8000/api
+```
+
 ## Swagger docs
 
 Documentation of endpoints can be found at ```http://localhost:8000/api/docs```
