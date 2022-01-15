@@ -24,7 +24,7 @@ That's all
 ```dotenv
 APP_ENV=dev
 DB_HOST=database
-DB_NAME=receipt-engine
+DB_NAME=twitter-copy
 DB_PASSWORD=password
 DB_USER=user
 DB_PORT=5432
