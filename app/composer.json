@@ -15,6 +15,7 @@
         "doctrine/doctrine-bundle": "^2.4",
         "doctrine/doctrine-migrations-bundle": "^3.2",
         "doctrine/orm": "^2.10",
+        "hautelook/alice-bundle": "*",
         "idci/keycloak-security-bundle": "^1.2",
         "knplabs/knp-gaufrette-bundle": "^0.7.1",
         "nelmio/cors-bundle": "^2.2",
@@ -91,9 +92,11 @@
     "require-dev": {
         "dama/doctrine-test-bundle": "^6.6",
         "doctrine/doctrine-fixtures-bundle": "^3.4",
+        "justinrainbow/json-schema": "^5.2",
         "phpunit/phpunit": "^9.5",
         "symfony/browser-kit": "5.3.*",
         "symfony/css-selector": "5.3.*",
+        "symfony/http-client": "5.3.*",
         "symfony/phpunit-bridge": "^5.3",
         "symfony/stopwatch": "5.3.*",
         "symfony/web-profiler-bundle": "5.3.*"

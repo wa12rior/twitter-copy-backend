@@ -22,8 +22,4 @@ services:
             - '../src/Kernel.php'
             - '../src/Tests/'
 
-    App\Controller\:
-        resource: '../src/Controller/'
-        tags: ['controller.service_arguments']
-
     Gaufrette\Adapter: '@gaufrette.receipt_engine_adapter'

@@ -1,4 +1,4 @@
-CMD=docker exec -u root -it twitter-copy_twitter_copy_1
+CMD=docker exec -u root -it twitter-copy-twitter_copy-1
 
 bash_php:
 	$(CMD) /bin/bash
@@ -7,12 +7,19 @@ install:
 	$(CMD) composer install
 
 setup:
-	$(CMD) bin/console d:d:d -f;true
+	$(CMD) bin/console d:d:d -f --if-exists;true
 	$(CMD) bin/console d:d:c;true
 	$(CMD) bin/console d:m:m --no-interaction
 	$(CMD) bin/console assets:install
 	$(CMD) bin/console cache:warmup
 	$(CMD) bin/console cache:clear
+
+tests:
+	$(CMD) bin/console d:d:d --env=test -f --if-exists;true
+	$(CMD) bin/console d:d:c --env=test;true
+	$(CMD) bin/console d:m:m --env=test --no-interaction
+	$(CMD) bin/console d:f:l --env=test --append --no-interaction
+	$(CMD) php bin/phpunit tests/
 
 # Variables
 stack_name=keycloak
